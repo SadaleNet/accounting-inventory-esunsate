@@ -52,8 +52,8 @@ For esun Sate:
 
 ## Receipts
 
-* All receipts are uploaded to [TODO](TODO) with annotation for users to perform audit of the record.csv
-* Redacted information for protecting the privacy of the recipients and myself: transaction ID, shipping number (to avoid revealing recipients' address), recipient's name, shipping addresses
+* All receipts are uploaded here with annotations for the public to perform audit of the record.csv: [lipu mani pi esun Sate](https://esun.sadale.net/lipumani/)
+* Redacted information for protecting the privacy of the recipients and myself: transaction ID, shipping tracking numbers, recipient's name, shipping addresses
 
 ## Calculation of Unit Cost of each Batch
 
