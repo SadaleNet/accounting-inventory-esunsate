@@ -4,7 +4,7 @@ esun Sate is an informal store created by jan Sate (Sadale) operating on non-pro
 
 This repo records the accounting and inventory information of esun Sate. The ultimate purpose is to calculate the profit with reasonable accuracy so that giveaways can be performed while making sure that jan Sate wouldn't be losing money in the operation.
 
-jan Sate commits free labor for delivering at least 30 units of devices per year across all his hardware projects. He does not foresee the demand would sustainably go beyond that.
+jan Sate commits free labor for delivering at least first 30 units of devices per year across all his hardware projects. He does not foresee the demand would sustainably go beyond that.
 
 ## Usage
 
