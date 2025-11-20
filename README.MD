@@ -19,8 +19,8 @@ Please see `record-example.csv` for how the operation are recorded. It includes 
 * DATE format: `YYYY-MM-DD`
 * REF (Order Number) format:
 	* YYYYMMDD_N, where N is the order number of that date
-	* Each order number can contain suborders such as 20251101_0a or 20251101_0b. It's just a syntactic sugar with no meaning to the script itself
-* BATCH format: a number. It can has alphabet suffix to be used as subbatch number. It's just a syntactic sugar with no meaning to the script itself
+	* Each order number can contain suborders such as 20251101_0a or 20251101_0b. The suffix is just a syntactic sugar with no meaning to the script itself
+* BATCH format: a number. It can has alphabet suffix to be used as subbatch number. The suffix is just a syntactic sugar with no meaning to the script itself
 
 ## Giveaway Handling
 
@@ -46,7 +46,8 @@ For esun Sate:
 * Expense of equipment: If the equipment is specific to the project, full price would be counted toward the project. If it's shared by the project, at most half of the price of the equipment would be counted.
 * Expense of material shipping: I often purchase other stuffs on taobao along with the material, consolidate them and ship all the stuffs to Hong Kong SAR in one-go.  If the shipment is dedicated to the project's material, full shipping price would be counted. If the shipment is predominantly other stuffs unrelated to the project, the shipment fee would not be counted. Otherwise, half of the shipping fee would be counted.
 * Fee of all taobao expenses are fixed at 3% to account for transaction fee and currency exchange loss.
-* Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund to HKD.
+* Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund from HKD to USD.
+* Credit card payment fee to JLCPCB is fixed at 2% to account to account for transaction fee and currency conversion loss.
 * Income from Paypal has a fixed fee of 3% on top of whatever existing seller fee might be in place to account for currency conversion loss when I withdraw it as HKD.
 * ilo nanpa donation pool handling: TBC
 

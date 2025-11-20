@@ -5,12 +5,12 @@ EXPENSE: DATE 2025-08-28, TYPE material, PROJECT ilonena, BATCH 1a, SUPPLIER JLC
 EXPENSE: DATE 2025-08-30, TYPE material, PROJECT ilonena, BATCH 1a, SUPPLIER taobao, AMOUNT RMB43.58, FEE 3%
 EXPENSE: DATE 2025-09-08, TYPE material, PROJECT ilonena, BATCH 1a, SUPPLIER taobao, AMOUNT RMB37.24, FEE 3%
 EXPENSE: DATE 2025-10-13, TYPE material, PROJECT ilonena, BATCH 1a, SUPPLIER taobao, AMOUNT RMB60.22, FEE 3%
-EXPENSE: DATE 2025-10-18, TYPE material, PROJECT ilonena, BATCH 1b, SUPPLIER JLCPCB, AMOUNT USD39.2, FEE USD0.4, REMARKS 5pcs, enlarged pin header holes
+EXPENSE: DATE 2025-10-18, TYPE material, PROJECT ilonena, BATCH 1b, SUPPLIER JLCPCB, AMOUNT USD39.2, FEE 2%, REMARKS 5pcs, enlarged pin header holes. Paid via credit card
 EXPENSE: DATE 2025-10-22, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER taobao, AMOUNT RMB205.76, FEE 3%, REMARKS Purpose: assemble 10pcs in total
 OBTAIN: DATE 2025-10-25, TYPE assembled, PROJECT ilonena, BATCH 1, QUANTITY 10, COSTEACH USD13.063, REMARKS Two of them were actually assembled much earlier while testing with different components at several iterations. Another 3 of them were partially assembled at that same earlier point. But for simplicity I'm gonna group both BATCH 1a and BATCH 1b as BATCH 1
 RESERVE: DATE 2025-10-25, REF 20251025_0, ITEMS ilonena1, REMARKS Keep by jan Sate for R&D use. Actual date was since the beginning of the project. But to avoid linting error, this entry is placed after the OBTAIN record.
 RELEASE: DATE 2025-10-29, TYPE sales, REF 20251029_0, ITEMS ilonena2
-INCOME: DATE 2025-10-29, TYPE sales, REF 20251029_0, AMOUNT USD61.0, FEE 0
+INCOME: DATE 2025-10-29, TYPE sales, REF 20251029_0, AMOUNT USD61.0, FEE 3%
 EXPENSE: DATE 2025-10-30, TYPE shipping, REF 20251029_0, AMOUNT HKD75.9, FEE 0
 RESERVE: DATE 2025-11-01, REF 20251101_0, ITEMS ilonena5, REMARKS Sent to US for redistribution
 EXPENSE: DATE 2025-11-01, TYPE shipping, REF 20251101_0, AMOUNT HKD245, FEE HKD11.8, REMARKS the fee is commute cost. There's no transaction fee.
@@ -18,5 +18,5 @@ RELEASE: DATE 2025-11-01, TYPE giveaway, REF 20251101_0a, ITEMS ilonena1, REMARK
 RELEASE: DATE 2025-11-04, TYPE gift, REF 20251104_0, ITEMS ilonena1, REMARKS Permanent exhibition unit for Dimsumlabs
 INCOME: DATE 2025-11-04, TYPE donation, REF 20251104_0, AMOUNT USD13.063, FEE 0, REMARKS Sadale's gift to Dimsumlabs for permanent exhibition
 EXPENSE: DATE 2025-11-05, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER taobao, AMOUNT RMB35, FEE 3%, REMARKS 2nd batch - testing with enclosure with 2.9mm slot size
-INCOME: DATE 2025-11-17, TYPE sales, REF 20251101_0b, AMOUNT USD40, FEE USD2.06
-EXPENSE: DATE 2025-11-20, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER JLCPCB, AMOUNT USD116.11, FEE 3%, REMARKS 25pcs
+INCOME: DATE 2025-11-17, TYPE sales, REF 20251101_0b, AMOUNT USD37.94, FEE 3%, Paypal fee is USD2.06. The extra 3% for currency conversion loss.
+EXPENSE: DATE 2025-11-20, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER JLCPCB, AMOUNT USD116.11, FEE 2%, REMARKS 25pcs. Paid via credit card
