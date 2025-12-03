@@ -1,6 +1,6 @@
 # Accounting for esun Sate (nasin nanpa mani pi esun Sate)
 
-esun Sate is an informal store created by jan Sate (Sadale) operating on non-profit basis.
+[esun Sate](https://esun.sadale.net/) is an informal store created by jan Sate (Sadale) operating on non-profit basis.
 
 This repo records the accounting and inventory information of esun Sate. The ultimate purpose is to calculate the profit with reasonable accuracy so that giveaways can be performed while making sure that jan Sate wouldn't be losing money in the operation.
 
@@ -44,11 +44,12 @@ For esun Sate:
 ## Accounting method:
 
 * Expense of equipment: If the equipment is specific to the project, full price would be counted toward the project. If it's shared by the project, at most half of the price of the equipment would be counted.
-* Expense of material shipping: I often purchase other stuffs on taobao along with the material, consolidate them and ship all the stuffs to Hong Kong SAR in one-go.  If the shipment is dedicated to the project's material, full shipping price would be counted. If the shipment is predominantly other stuffs unrelated to the project, the shipment fee would not be counted. Otherwise, half of the shipping fee would be counted.
+* Expense of material shipping: I often purchase personal stuffs on taobao unrelated to the esun Sate projects along with the esun Sate's material, consolidate them and ship all the stuffs to Hong Kong SAR in one-go.  If the shipment is dedicated to the project's material, full shipping price would be counted. If the shipment is predominantly other stuffs unrelated to the project, the shipment fee would not be counted. Otherwise, half of the shipping fee would be counted.
 * Fee of all taobao expenses are fixed at 3% to account for transaction fee and currency exchange loss.
 * Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund from HKD to USD.
 * Credit card payment fee to JLCPCB is fixed at 2% to account to account for transaction fee and currency conversion loss.
 * Income from Paypal has a fixed fee of 3% on top of whatever existing seller fee might be in place to account for currency conversion loss when I withdraw it as HKD.
+* In addition to giveaways, sometimes I might gift a unit of my product to my friends. If whoever I'm gifting to is not a significant contributor of toki pona community nor a contributor of my projects, I will pay for the unit out of my own wallet at cost price. Example that I would pay for: Gifting a unit for exhibition in hackerspace, gifting to my close friends for sharing. Example that I won't pay for: gifting to volunteers that help on the project(s), a unit reserved for my own R&D use.
 * ilo nanpa donation pool handling: TBC
 
 ## Receipts
