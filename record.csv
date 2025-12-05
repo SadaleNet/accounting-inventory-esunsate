@@ -20,3 +20,4 @@ INCOME: DATE 2025-11-04, TYPE donation, REF 20251104_0, AMOUNT USD13.063, FEE 0,
 EXPENSE: DATE 2025-11-05, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER taobao, AMOUNT RMB35, FEE 3%, REMARKS 2nd batch - testing with enclosure with 2.9mm slot size
 INCOME: DATE 2025-11-17, TYPE sales, REF 20251101_0b, AMOUNT USD37.94, FEE 3%, REMARKS Paypal fee is USD2.06. The extra 3% for currency conversion loss.
 EXPENSE: DATE 2025-11-20, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER JLCPCB, AMOUNT USD116.11, FEE 2%, REMARKS 25pcs. Paid via credit card
+EXPENSE: DATE 2025-11-22, TYPE material, PROJECT ilonena, BATCH 2, SUPPLIER taobao, AMOUNT RMB403.15, FEE 3%

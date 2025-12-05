@@ -6,6 +6,10 @@ This repo records the accounting and inventory information of esun Sate. The ult
 
 jan Sate commits free labor for delivering at least first 30 units of devices per year across all his hardware projects. He does not foresee the demand would sustainably go beyond that.
 
+## View Latest Financial Record
+
+Please view the latest record here: [./output.txt](./output.txt)
+
 ## Usage
 
 Run `analyzer.py` to obtain the statistics of esun Sate

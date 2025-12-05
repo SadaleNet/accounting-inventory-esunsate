@@ -1,0 +1,12 @@
+Breakdown of profit of all orders:
+NOREF		-6.64 USD
+20251025_0	-13.06 USD
+20251029_0	23.27 USD
+20251101_0	-61.56 USD
+20251104_0	0.00 USD
+----------
+Profit:		-57.99 USD (does not include material cost of inventory that hasn't been consumed)
+Cash Flow:	-253.33 USD (includes material cost of inventory that hasn't been consumed)
+----------
+Inventory:
+ilonena	1	Next unit @13.063 USD
