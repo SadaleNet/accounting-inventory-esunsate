@@ -264,6 +264,6 @@ print("----------")
 print(f"Profit:\t\t{profit:.2f} USD (does not include material cost of inventory that hasn't been consumed)")
 print(f"Cash Flow:\t{cash_flow:.2f} USD (includes material cost of inventory that hasn't been consumed)")
 print("----------")
-print("Inventory:")
+print("Inventory (Does not include the ones already sent to the US warehouse):")
 for i in sorted(item_cost):
 	print(f"{i}\t{len(item_cost[i])}\tNext unit @{item_cost[i][0] if len(item_cost[i]) > 0 else 'N/A'} USD")
