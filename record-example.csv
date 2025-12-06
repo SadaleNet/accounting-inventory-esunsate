@@ -4,13 +4,13 @@
 EXPENSE: DATE 2024-12-01, TYPE R&D, PROJECT ilonena, SUPPLIER taobao, AMOUNT RMB123, FEE 3%
 
 # Material expenses for the first batch
-EXPENSE: DATE 2025-01-01, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER JLCPCB, AMOUNT USD80, FEE USD1.5
-EXPENSE: DATE 2025-02-01, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER taobao, AMOUNT RMB600, FEE 3%
+EXPENSE: DATE 2025-01-01, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER JLCPCB, AMOUNT USD120, FEE USD1.5
+EXPENSE: DATE 2025-02-01, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER taobao, AMOUNT RMB900, FEE 3%
 # After assembling the material, I'll put the devices into the inventory with its unit cost (COSTEACH) manually entered based on the previously recorded material cost.
-OBTAIN: DATE 2025-03-01, TYPE assembled, PROJECT ilonena, BATCH 1, QUANTITY 10, COSTEACH USD16.673
+OBTAIN: DATE 2025-03-01, TYPE assembled, PROJECT ilonena, BATCH 1, QUANTITY 15, COSTEACH USD16.673
 
 # Reserves a unit for development use. By RESERVEing it, the unit is removed from the inventory and the cost of the unit is counted towards the "profit".
-RESERVE: DATE 2025-03-01, REF 20250301_0, ITEMS ilonena1, REMARKS Keep by jan Sate for R&D use. Actual date was since the beginning of the project. But to avoid linting error, this entry is placed after the OBTAIN record.
+RESERVE: DATE 2025-03-01, REF 20250301_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use.
 
 # Sales of a single unit, direct shipment. Here, "ilonena1" means one unit of ilonena. If the order had two unit of ilonanpa and a unit of ilonanpasin, that'd be "ilonena1 ilonanpasin2"
 RELEASE: DATE 2025-03-15, TYPE sales, REF 20250315_0, ITEMS ilonena1
@@ -21,11 +21,11 @@ EXPENSE: DATE 2025-03-20, TYPE shipping, REF 20250315_0, AMOUNT HKD40, FEE 0
 # 4 sales. REF is 20250401_0, with -a -b -c -d suffix showing the subreference numbers
 RELEASE: DATE 2025-04-01, TYPE sales, REF 20250401_0a, ITEMS ilonena1, REMARKS Shared order to the US, 1 unit
 INCOME: DATE 2025-04-01, TYPE sales, REF 20250401_0a, AMOUNT USD40, FEE 3%
-RELEASE: DATE 2025-04-02, TYPE sales, REF 20250401_0b, ITEMS ilonena2, REMARKS Shared order to the US, 2 units
-INCOME: DATE 2025-04-02, TYPE sales, REF 20250401_0b, AMOUNT USD40, FEE 3%
-RELEASE: DATE 2025-04-03, TYPE sales, REF 20250401_0c, ITEMS ilonena2, REMARKS Shared order to the US, 2 units
+RELEASE: DATE 2025-04-02, TYPE sales, REF 20250401_0b, ITEMS ilonena1, REMARKS Shared order to the US, 2 units
+INCOME: DATE 2025-04-02, TYPE sales, REF 20250401_0b, AMOUNT USD80, FEE 3%
+RELEASE: DATE 2025-04-03, TYPE sales, REF 20250401_0c, ITEMS ilonena1, REMARKS Shared order to the US, 1 unit
 INCOME: DATE 2025-04-03, TYPE sales, REF 20250401_0c, AMOUNT USD40, FEE 3%
-RELEASE: DATE 2025-04-04, TYPE sales, REF 20250401_0d, ITEMS ilonena2, REMARKS Shared order to the US, 1 unit
+RELEASE: DATE 2025-04-04, TYPE sales, REF 20250401_0d, ITEMS ilonena1, REMARKS Shared order to the US, 1 unit
 INCOME: DATE 2025-04-04, TYPE sales, REF 20250401_0d, AMOUNT USD40, FEE 3%
 # The international shipping is done only once for 20250401_0
 EXPENSE: DATE 2025-04-15, TYPE shipping, REF 20250401_0, AMOUNT HKD245, FEE HKD12, REMARKS the fee is commute cost. There's no transaction fee.
@@ -33,20 +33,39 @@ EXPENSE: DATE 2025-04-15, TYPE shipping, REF 20250401_0, AMOUNT HKD245, FEE HKD1
 # After the redistributor had done with shipping, I'm gonna reimburse the amount. Let's say it's USD8 per order, 3 orders would be USD24.
 EXPENSE: DATE 2025-05-01, TYPE shipping, REF 20250401_0, AMOUNT USD24, FEE 3%, REMARKS US shipping reimbursement
 
+# Another example of batch shipment to the US. This time I'm using a US warehouse
+RESERVE: DATE 2025-06-01, REF 20250601_0, ITEMS ilonena6, REMARKS Sent to US for redistribution
+# I start selling them to the US with the RESERVE'd units
+RELEASE: DATE 2025-06-02, TYPE sales, REF 20250601_0a, ITEMS ilonena1, REMARKS Shared order to the US, 1 unit
+INCOME: DATE 2025-06-02, TYPE sales, REF 20250601_0a, AMOUNT USD40, FEE 3%
+RELEASE: DATE 2025-06-03, TYPE sales, REF 20250601_0b, ITEMS ilonena1, REMARKS Shared order to the US, 1 unit
+INCOME: DATE 2025-06-03, TYPE sales, REF 20250601_0b, AMOUNT USD40, FEE 3%
+RELEASE: DATE 2025-06-04, TYPE sales, REF 20250601_0c, ITEMS ilonena2, REMARKS Shared order to the US, 2 unit
+INCOME: DATE 2025-06-04, TYPE sales, REF 20250601_0c, AMOUNT USD80, FEE 3%
+# After collecting enough orders to the US, I ship to the US warehouse.
+# Please keep in mind that at this point, 6 units are sent to the US, with only 4 units are sold. So the other 2 units will stay in the US warehouse
+EXPENSE: DATE 2025-06-04, TYPE shipping, REF 20250601_0, AMOUNT HKD245, FEE HKD12, REMARKS the fee is commute cost. There's no transaction fee.
+# Reimbursement provided to US warehouse after it finished shipping to the buyers
+EXPENSE: DATE 2025-06-30, TYPE shipping, REF 20250601_0, AMOUNT USD24, FEE 3%, REMARKS US shipping reimbursement
+
 # Now that I've got profit. I'm gonna do a unit of giveaway. Notice that there's no INCOME for giveaway.
-RELEASE: DATE 2025-06-01, TYPE giveaway, REF 20250601_0, ITEMS ilonena1
-EXPENSE: DATE 2025-06-01, TYPE shipping, REF 20250601_0, AMOUNT HKD40, FEE 0
+RELEASE: DATE 2025-07-01, TYPE giveaway, REF 20250701_0, ITEMS ilonena1
+EXPENSE: DATE 2025-07-01, TYPE shipping, REF 20250701_0, AMOUNT HKD40, FEE 0
 
 ## Sample output after running `python3 analyzer.py record-example.csv exchange_rate`
 # Breakdown of profit of all orders:
 # NOREF		-17.50 USD
 # 20250301_0	-16.67 USD
 # 20250315_0	9.22 USD
-# 20250401_0	80.82 USD
-# 20250601_0	-21.77 USD
+# 20250401_0	69.61 USD
+# 20250601_0	-2.31 USD
+# 20250701_0	-21.77 USD
 # ----------
-# Profit:		34.10 USD (does not include material cost of inventory that hasn't been consumed)
-# Cash Flow:	-65.93 USD (includes material cost of inventory that hasn't been consumed)
+# Profit:		20.58 USD (does not include material cost of inventory that hasn't been consumed)
+# Cash Flow:	-12.01 USD (includes material cost of inventory that hasn't been consumed)
 # ----------
-# Inventory:
-# ilonena	6	Next unit @16.673 USD
+# Inventory (Does not include the ones already sent to the US warehouse):
+# ilonena	2	Next unit @16.673 USD
+# Reserved units (Counted towards consumed inventory):
+# 20250301_0	ilonena1	Kept by jan Sate for R&D use.
+# 20250601_0	ilonena2	Sent to US for redistribution

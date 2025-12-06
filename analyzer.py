@@ -237,8 +237,6 @@ def take_reserved_inventory(ref, items):
 			reserved_items_counter[ref]["items"].pop(item_name)
 		elif reserved_items_counter[ref]["items"][item_name] < 0:
 			raise ValueError(f"Attempting to RELEASE more items than it has from RESERVE'd items. REF: {ref}")
-		if len(reserved_items_counter[ref]["items"]) == 0:
-			reserved_items_counter.pop(ref)
 
 def items_to_str(item_dict):
 	return ','.join([f"{name}{quantity}" for name, quantity in item_dict.items()])
@@ -278,9 +276,11 @@ for line in data_table:
 		profit -= item_value
 	elif action == "RELEASE":
 		# Remove item from inventory and deduct the cost if it hasn't already been RESERVE'D
-		if remove_suffix(line["REF"]) not in ref_value:
+		if remove_suffix(line["REF"]) not in reserved_items_counter:
 			item_value = take_item_and_compute_cost(line["ITEMS"])
-			ref_value[remove_suffix(line["REF"])] = -item_value
+			if remove_suffix(line["REF"]) not in ref_value:
+				ref_value[remove_suffix(line["REF"])] = 0.0
+			ref_value[remove_suffix(line["REF"])] -= item_value
 			profit -= item_value
 		else:
 			take_reserved_inventory(remove_suffix(line["REF"]), line["ITEMS"])
@@ -297,4 +297,5 @@ for i in sorted(item_cost):
 	print(f"{i}\t{len(item_cost[i])}\tNext unit @{item_cost[i][0] if len(item_cost[i]) > 0 else 'N/A'} USD")
 print("Reserved units (Counted towards consumed inventory):")
 for i in sorted(reserved_items_counter):
-	print(f"{i}\t{items_to_str(reserved_items_counter[i]['items'])}\t{reserved_items_counter[i]['remarks']}")
+	if len(reserved_items_counter[i]["items"]) != 0:
+		print(f"{i}\t{items_to_str(reserved_items_counter[i]['items'])}\t{reserved_items_counter[i]['remarks']}")
