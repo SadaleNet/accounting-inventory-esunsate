@@ -216,8 +216,33 @@ for line in data_table:
 # Pass 3 - Compute total income/expense and stats
 item_cost = {p:[] for p in AVAILABLE_ITEMS} # FIFO item cost for each unit. The key is the PROJECT's name, and the value is a list of each item.
 ref_value = {'':0.0}
+reserved_items_counter = {} # The amonut of items that has been RESERVE'd but not RELEASE'd
 cash_flow = 0.0 # income/expense of the fund spend/received at this moment
 profit = 0.0 # income/expense of the stock that has been consumed (the material cost isn't counted until consumed)
+
+def add_reserved_inventory(ref, items, remarks):
+	total = 0.0
+	items = parse_items(items)
+	for item_name, quantity in items.items():
+		if ref not in reserved_items_counter:
+			reserved_items_counter[ref] = {"items": {}, "remarks": remarks if not None else ""}
+		reserved_items_counter[ref]["items"][item_name] = quantity
+
+def take_reserved_inventory(ref, items):
+	total = 0.0
+	items = parse_items(items)
+	for item_name, quantity in items.items():
+		reserved_items_counter[ref]["items"][item_name] -= quantity
+		if reserved_items_counter[ref]["items"][item_name] == 0:
+			reserved_items_counter[ref]["items"].pop(item_name)
+		elif reserved_items_counter[ref]["items"][item_name] < 0:
+			raise ValueError(f"Attempting to RELEASE more items than it has from RESERVE'd items. REF: {ref}")
+		if len(reserved_items_counter[ref]["items"]) == 0:
+			reserved_items_counter.pop(ref)
+
+def items_to_str(item_dict):
+	return ','.join([f"{name}{quantity}" for name, quantity in item_dict.items()])
+
 
 def take_item_and_compute_cost(items):
 	total = 0.0
@@ -248,6 +273,7 @@ for line in data_table:
 		if remove_suffix(line["REF"]) in ref_value:
 			raise Exception(f"Duplicated RESERVE REF: {line}")
 		item_value = take_item_and_compute_cost(line["ITEMS"])
+		add_reserved_inventory(remove_suffix(line["REF"]), line["ITEMS"], line.get("REMARKS"))
 		ref_value[remove_suffix(line["REF"])] = -item_value
 		profit -= item_value
 	elif action == "RELEASE":
@@ -256,6 +282,8 @@ for line in data_table:
 			item_value = take_item_and_compute_cost(line["ITEMS"])
 			ref_value[remove_suffix(line["REF"])] = -item_value
 			profit -= item_value
+		else:
+			take_reserved_inventory(remove_suffix(line["REF"]), line["ITEMS"])
 
 print("Breakdown of profit of all orders:")
 for i in sorted(ref_value):
@@ -267,3 +295,6 @@ print("----------")
 print("Inventory (Does not include the ones already sent to the US warehouse):")
 for i in sorted(item_cost):
 	print(f"{i}\t{len(item_cost[i])}\tNext unit @{item_cost[i][0] if len(item_cost[i]) > 0 else 'N/A'} USD")
+print("Reserved units (Counted towards consumed inventory):")
+for i in sorted(reserved_items_counter):
+	print(f"{i}\t{items_to_str(reserved_items_counter[i]['items'])}\t{reserved_items_counter[i]['remarks']}")
