@@ -31,7 +31,7 @@ Please see `record-example.csv` for how the operation are recorded. It includes 
 For esun Sate:
 
 * The definition of "Cash Flow" is all of the income minus all of the expense minus all of the fees.
-* The definition of "Profit" is all of the income minus the expense of the consumed units (sold units, reserved units for R&D, giveaway units, etc.) minus all of the fees of such incomes and expenses. Whenever a unit is assembled, a unit price is calculated and whenever a unit is RESERVE'D or RELEASE'D, the expense would be incurred against the "Profit".
+* The definition of "Profit" is all of the income minus the expense of the consumed units (sold units, units kept for R&D, giveaway units, etc.) minus all of the fees of such incomes and expenses. Whenever a unit is assembled, a unit price is calculated and whenever a unit is RESERVE'D or RELEASE'D, the expense would be incurred against the "Profit".
 * The "Profit" is always higher than "Cash Flow" because the expense is immediately incurred to the "Cash Flow" when the money is paid, and it's only incurred to the "Profit" when the unit in the inventory is released. Meanwhile, the income is always immediately registered on both "Profit" and "Cash Flow" The delayed application of the expense to the "Profit" makes it higher than the "Cash Flow".
 * Giveaway would happen upon occurance of either of the follows:
 	* the "Profit" is high enough to cover the warranty/repair requests and I'm confident that the remaining units in the inventory can be sold in a reasonably timeframe
@@ -53,7 +53,7 @@ For esun Sate:
 * Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund from HKD to USD.
 * Credit card payment fee to JLCPCB is fixed at 2% to account to account for transaction fee and currency conversion loss.
 * Income from Paypal has a fixed fee of 3% on top of whatever existing seller fee might be in place to account for currency conversion loss when I withdraw it as HKD.
-* In addition to giveaways, sometimes I might gift a unit of my product to my friends. If whoever I'm gifting to is not a significant contributor of toki pona community nor a contributor of my projects, I will pay for the unit out of my own wallet at cost price. Example that I would pay for: Gifting a unit for exhibition in hackerspace, gifting to my close friends for sharing. Example that I won't pay for: gifting to volunteers that help on the project(s), a unit reserved for my own R&D use.
+* In addition to giveaways, sometimes I might gift a unit of my product to my friends. If whoever I'm gifting to is not a significant contributor of toki pona community nor a contributor of my projects, I will pay for the unit out of my own wallet at cost price. Example that I would pay for: Gifting a unit for exhibition in hackerspace, gifting to my close friends for sharing. Example that I won't pay for: gifting to volunteers that help on the project(s), a unit kept for my own R&D use.
 * ilo nanpa donation pool handling: TBC
 
 ## Receipts

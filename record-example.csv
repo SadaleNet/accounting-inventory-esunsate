@@ -9,8 +9,8 @@ EXPENSE: DATE 2025-02-01, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER taob
 # After assembling the material, I'll put the devices into the inventory with its unit cost (COSTEACH) manually entered based on the previously recorded material cost.
 OBTAIN: DATE 2025-03-01, TYPE assembled, PROJECT ilonena, BATCH 1, QUANTITY 15, COSTEACH USD16.673
 
-# Reserves a unit for development use. By RESERVEing it, the unit is removed from the inventory and the cost of the unit is counted towards the "profit".
-RESERVE: DATE 2025-03-01, REF 20250301_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use.
+# Keep a unit for development use. By RELEASE'ing it, the unit is removed from the inventory and the cost of the unit is counted towards the "profit".
+RELEASE: DATE 2025-03-01, TYPE gift, REF 20250301_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use.
 
 # Sales of a single unit, direct shipment. Here, "ilonena1" means one unit of ilonena. If the order had two unit of ilonanpa and a unit of ilonanpasin, that'd be "ilonena1 ilonanpasin2"
 RELEASE: DATE 2025-03-15, TYPE sales, REF 20250315_0, ITEMS ilonena1
@@ -67,5 +67,4 @@ EXPENSE: DATE 2025-07-01, TYPE shipping, REF 20250701_0, AMOUNT HKD40, FEE 0
 # Inventory (Does not include the ones already sent to the US warehouse):
 # ilonena	2	Next unit @16.673 USD
 # Reserved units (Counted towards consumed inventory):
-# 20250301_0	ilonena1	Kept by jan Sate for R&D use.
 # 20250601_0	ilonena2	Sent to US for redistribution

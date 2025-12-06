@@ -11,5 +11,4 @@ Cash Flow:	-253.33 USD (includes material cost of inventory that hasn't been con
 Inventory (Does not include the ones already sent to the US warehouse):
 ilonena	1	Next unit @13.063 USD
 Reserved units (Counted towards consumed inventory):
-20251025_0	ilonena1	Kept by jan Sate for R&D use. Actual date was since the beginning of the project. But to avoid linting error, this entry is placed after the OBTAIN record.
 20251101_0	ilonena3	Sent to US for redistribution

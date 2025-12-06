@@ -8,7 +8,7 @@ EXPENSE: DATE 2025-10-13, TYPE material, PROJECT ilonena, BATCH 1a, SUPPLIER tao
 EXPENSE: DATE 2025-10-18, TYPE material, PROJECT ilonena, BATCH 1b, SUPPLIER JLCPCB, AMOUNT USD39.2, FEE 2%, REMARKS 5pcs, enlarged pin header holes. Paid via credit card
 EXPENSE: DATE 2025-10-22, TYPE material, PROJECT ilonena, BATCH 1, SUPPLIER taobao, AMOUNT RMB205.76, FEE 3%, REMARKS Purpose: assemble 10pcs in total
 OBTAIN: DATE 2025-10-25, TYPE assembled, PROJECT ilonena, BATCH 1, QUANTITY 10, COSTEACH USD13.063, REMARKS Two of them were actually assembled much earlier while testing with different components at several iterations. Another 3 of them were partially assembled at that same earlier point. But for simplicity I'm gonna group both BATCH 1a and BATCH 1b as BATCH 1
-RESERVE: DATE 2025-10-25, REF 20251025_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use. Actual date was since the beginning of the project. But to avoid linting error, this entry is placed after the OBTAIN record.
+RELEASE: DATE 2025-10-25, TYPE gift, REF 20251025_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use. Actual date was since the beginning of the project. But to avoid linting error, this entry is placed after the OBTAIN record.
 RELEASE: DATE 2025-10-29, TYPE sales, REF 20251029_0, ITEMS ilonena2
 INCOME: DATE 2025-10-29, TYPE sales, REF 20251029_0, AMOUNT USD61.0, FEE 3%
 EXPENSE: DATE 2025-10-30, TYPE shipping, REF 20251029_0, AMOUNT HKD75.9, FEE 0
