@@ -64,5 +64,5 @@ For esun Sate:
 ## Calculation of Unit Cost of each Batch
 
 1. Run python with -i against analyzer.py so that I'd get to the REPL after the script ends
-2. Run the following command for obtaining the total cost of ilonena BATCH 1: `round(sum([i["VALUE"] for i in data_table if i["ACTION"] == "EXPENSE" and i["PROJECT"] == "ilonena" and i["TYPE"] == "material" and remove_suffix(i["BATCH"])]), 3)`
+2. Run the following command for obtaining the total cost of ilonena BATCH 1: `round(sum([i["VALUE"] for i in data_table if i["ACTION"] == "EXPENSE" and i["PROJECT"] == "ilonena" and i["TYPE"] == "material" and remove_suffix(i["BATCH"]) == "1"]), 3)`
 3. Manually divide the above value with the quantity of the batch to obtain the material cost

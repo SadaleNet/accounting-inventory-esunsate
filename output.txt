@@ -6,9 +6,9 @@ NOREF		-6.64 USD
 20251104_0	0.00 USD
 ----------
 Profit:		-57.99 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	-253.33 USD (includes material cost of inventory that hasn't been consumed)
+Cash Flow:	-253.47 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
-ilonena	1	Next unit @13.063 USD
+ilonena	25	Next unit @13.063 USD
 Reserved units (Counted towards consumed inventory):
 20251101_0	ilonena3	Sent to US for redistribution
