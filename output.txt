@@ -4,19 +4,20 @@ NOREF		-6.64 USD
 20251029_0	23.27 USD
 20251101_0	50.84 USD
 20251104_0	0.00 USD
-20251208_0	16.32 USD
-20251208_1	44.98 USD
-20251208_2	21.80 USD
-20251208_3	40.91 USD
-20251208_4	21.80 USD
-20251208_5	21.80 USD
-20251209_0	23.45 USD
+20251208_0	9.91 USD
+20251208_1	38.57 USD
+20251208_2	15.38 USD
+20251208_3	34.50 USD
+20251208_4	15.38 USD
+20251208_5	15.38 USD
+20251209_0	17.04 USD
+20251211_0	31.07 USD
 20251220_0	80.94 USD
 ----------
-Profit:		326.41 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	257.77 USD (includes material cost of inventory that hasn't been consumed)
+Profit:		312.60 USD (does not include material cost of inventory that hasn't been consumed)
+Cash Flow:	251.53 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
-ilonena	9	Next unit @7.585 USD
+ilonena	8	Next unit @7.585 USD
 Reserved units (Counted towards consumed inventory):
 20251220_0	ilonena5	To be sent to US for redistribution. Quantity is subject to adjustment
