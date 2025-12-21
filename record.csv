@@ -74,3 +74,4 @@ EXPENSE: DATE 2025-12-20, TYPE shipping, REF 20251211_0, AMOUNT HKD49.3, FEE 0, 
 EXPENSE: DATE 2025-12-20, TYPE shipping, REF 20251215_0, AMOUNT HKD49.3, FEE 0, REMARKS ditto
 
 EXPENSE: DATE 2025-12-20, TYPE shipping, REF 20251220_0, AMOUNT HKD346, FEE HKD11.8, REMARKS The fee is commute cost. There's no transaction fee.
+RELEASE: DATE 2025-12-21, TYPE giveaway, REF 20251220_0e, ITEMS ilonena1, REMARKS free unit for jan Likipi, the creator of Wakalito input method
