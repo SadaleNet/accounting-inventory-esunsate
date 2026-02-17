@@ -58,7 +58,9 @@ def convert_to_usd(date, amount):
 
 	cache_file = os.path.join(EXCHANGE_RATE_CACHE_PATH, f"{date}.json")
 	if not os.path.exists(cache_file):
-		r = urllib.request.urlopen(f"https://api.frankfurter.dev/v1/{date}?base=USD")
+		req = urllib.request.Request(f"https://api.frankfurter.dev/v1/{date}?base=USD")
+		req.add_header("User-Agent", "Currency Conversion for Accounting use (https://github.com/SadaleNet/accounting-inventory-esunsate)")
+		r = urllib.request.urlopen(req)
 		with open(cache_file, 'wb') as f:
 			f.write(r.read())
 
