@@ -19,7 +19,7 @@ NOREF		-39.29 USD
 20260212_0	23.45 USD
 ----------
 Profit:		275.66 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	244.94 USD (includes material cost of inventory that hasn't been consumed)
+Cash Flow:	174.05 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
 ilomusiali	0	Next unit @N/A USD
