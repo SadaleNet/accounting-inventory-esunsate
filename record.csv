@@ -113,4 +113,5 @@ EXPENSE: DATE 2026-03-05, TYPE shipping, REF 20260301_0, AMOUNT HKD75.2, FEE 0, 
 EXPENSE: DATE 2026-03-05, TYPE shipping, REF 20260302_0, AMOUNT HKD75.2, FEE 0, REMARKS ditto
 
 OBTAIN: DATE 2026-03-11, TYPE assembled, PROJECT ilonena, BATCH 3, QUANTITY 10, COSTEACH USD11.293
-RELEASE: DATE 2026-03-11, TYPE gift, REF 20260311_0, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use. This is the first batch of PCB rev2 with NKRO support.
+RELEASE: DATE 2026-03-11, TYPE gift, REF 20260311_0a, ITEMS ilonena1, REMARKS Kept by jan Sate for R&D use. This is the first batch of PCB rev2 with NKRO support. This unit also has a flaky key.
+RELEASE: DATE 2026-03-11, TYPE scrap, REF 20260311_0b, ITEMS ilonena1, REMARKS Found another flaky unit
