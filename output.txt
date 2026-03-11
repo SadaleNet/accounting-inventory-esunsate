@@ -19,12 +19,13 @@ NOREF		-45.01 USD
 20260212_0	23.45 USD
 20260301_0	35.20 USD
 20260302_0	12.18 USD
+20260311_0	-7.58 USD
 ----------
-Profit:		317.32 USD (does not include material cost of inventory that hasn't been consumed)
+Profit:		309.74 USD (does not include material cost of inventory that hasn't been consumed)
 Cash Flow:	196.43 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
 ilomusiali	0	Next unit @N/A USD
-ilonena	1	Next unit @7.585 USD
+ilonena	10	Next unit @11.293 USD
 Reserved units (Counted towards consumed inventory):
 20251220_0	ilonena1	For redistribution in the US
