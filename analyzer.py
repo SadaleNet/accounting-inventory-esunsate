@@ -118,7 +118,7 @@ AVAILABLE_TYPES = {
 }
 
 # List of available projects
-AVAILABLE_ITEMS = ["ilonena", "ilomusiali"]
+AVAILABLE_ITEMS = ["equipment", "ilonena", "ilomusiali"]
 
 # Pass 1 - parse fields into data table
 data_table = []

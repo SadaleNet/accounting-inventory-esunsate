@@ -22,7 +22,7 @@ NOREF		-52.92 USD
 20260328_0	12.57 USD
 ----------
 Profit:		304.26 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	-114.09 USD (includes material cost of inventory that hasn't been consumed)
+Cash Flow:	-66.03 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
 equipment	0	Next unit @N/A USD
