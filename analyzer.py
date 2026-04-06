@@ -296,6 +296,8 @@ print(f"Cash Flow:\t{cash_flow:.2f} USD (includes material cost of inventory tha
 print("----------")
 print("Inventory (Does not include the ones already sent to the US warehouse):")
 for i in sorted(item_cost):
+	if i == "equipment":
+		continue # Do not show equipment in inventorty listing
 	print(f"{i}\t{len(item_cost[i])}\tNext unit @{item_cost[i][0] if len(item_cost[i]) > 0 else 'N/A'} USD")
 print("Reserved units (Counted towards consumed inventory):")
 for i in sorted(reserved_items_counter):

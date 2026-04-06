@@ -25,8 +25,7 @@ Profit:		304.26 USD (does not include material cost of inventory that hasn't bee
 Cash Flow:	-66.03 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
-equipment	0	Next unit @N/A USD
 ilomusiali	0	Next unit @N/A USD
-ilonena	8	Next unit @14.116 USD
+ilonena	28	Next unit @14.116 USD
 Reserved units (Counted towards consumed inventory):
 20251220_0	ilonena1	For redistribution in the US
