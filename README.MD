@@ -48,6 +48,7 @@ For esun Sate:
 ## Accounting method:
 
 * Expense of equipment: If the equipment purchased is specific to a project, full price would be counted toward the project. If the equipment is expected to be used substaintially used by any of the projects but not dedicated to any of the projects, half of the amount would be charged as "equipment" R&D cost, with the other half I'll cover with the fund from my own wallet.
+* Expense of generic consumables: Half of the amount got charged as "equipment" R&D cost. I know it isn't an equipment but for simplicity let's charge it there.
 * Expense of material shipping: I often purchase personal stuffs on taobao unrelated to the esun Sate projects along with the esun Sate's material, consolidate them and ship all the stuffs to Hong Kong SAR in one-go.  If the shipment is dedicated to the project's material, full shipping price would be counted. If the shipment is predominantly other stuffs unrelated to the project, the shipment fee would not be counted. Otherwise, half of the shipping fee would be counted.
 * Fee of all taobao expenses are fixed at 3% to account for transaction fee and currency exchange loss.
 * Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund from HKD to USD.
