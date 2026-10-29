@@ -1,5 +1,5 @@
 Breakdown of profit of all orders:
-NOREF		-52.92 USD
+NOREF		-63.03 USD
 20251025_0	-13.06 USD
 20251029_0	23.27 USD
 20251101_0	11.70 USD
@@ -24,15 +24,20 @@ NOREF		-52.92 USD
 20260407_1	7.56 USD
 20260407_2	-23.48 USD
 20260407_3	-23.48 USD
-20260416_0	-100.07 USD
+20260416_0	76.24 USD
 20260504_0	15.56 USD
-20260507_0	23.21 USD
+20260507_0	18.62 USD
+20260723_0	12.43 USD
+20261016_0	-24.51 USD
+20261020_0	0.00 USD
+20261020_1	0.00 USD
+20261021_0	-100.41 USD
 ----------
-Profit:		199.99 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	-42.79 USD (includes material cost of inventory that hasn't been consumed)
+Profit:		249.12 USD (does not include material cost of inventory that hasn't been consumed)
+Cash Flow:	-31.05 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
-ilomusiali	0	Next unit @N/A USD
-ilonena	12	Next unit @7.83 USD
+ilomusiali	19	Next unit @12.253 USD
+ilonena	7	Next unit @7.83 USD
 Reserved units (Counted towards consumed inventory):
-20260416_0	ilonena8	For redistribution in the US
+20261021_0	ilonena5,ilomusiali5	For redistribution in the US. Exact quantity to be confirmed and might be adjusted.
