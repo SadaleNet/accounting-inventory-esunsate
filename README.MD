@@ -40,7 +40,7 @@ For esun Sate:
 ## Limitations:
 
 * Doesn't track inventory of material. It only track the inventory of assembled units.
-* The unit cost of each batch is an approximation. Since extra material are always ordered just in case, some of the cost of next batch may be counted toward to the previous batch
+* The unit cost of each batch is an approximation. Since extra material are always ordered just in case, some of the cost of next batch may be counted toward to the previous batch. For returned good units and repaired units, the unit cost is zero.
 * Floating point arithematics rounding error - it's negligible and I wouldn't mind being off by a few cents.
 * For material coming from taobao, I only create an entry for each shipment to Hong Kong SAR. The RMB exchange rate might change between the moment I make the purchase of the material and the moment that I pay for the shipping fee. For simplicity, only the exchange rate at the date of payment of shipping fee is recorded.
 * Supporting documents are not commited to the git repo to avoid sensitive info from being accidentally included, in which I wouldn't be able to remove
@@ -50,6 +50,7 @@ For esun Sate:
 * Expense of equipment: If the equipment purchased is specific to a project, full price would be counted toward the project. If the equipment is expected to be used substaintially used by any of the projects but not dedicated to any of the projects, half of the amount would be charged as "equipment" R&D cost, with the other half I'll cover with the fund from my own wallet.
 * Expense of generic consumables: Half of the amount got charged as "equipment" R&D cost. I know it isn't an equipment but for simplicity let's charge it there.
 * Expense of material shipping: I often purchase personal stuffs on taobao unrelated to the esun Sate projects along with the esun Sate's material, consolidate them and ship all the stuffs to Hong Kong SAR in one-go.  If the shipment is dedicated to the project's material, full shipping price would be counted. If the shipment is predominantly other stuffs unrelated to the project, the shipment fee would not be counted. Otherwise, half of the shipping fee would be counted.
+* Returned good units and repaired units have unit cost of USD0. That's because the cost has been consumed once. Let's not consume it the second time.
 * Fee of all taobao expenses are fixed at 3% to account for transaction fee and currency exchange loss.
 * Fee of all Paypal expenses are fixed at 3% to account for currency conversion loss upon I convert the fund from HKD to USD.
 * Credit card payment fee to JLCPCB is fixed at 2% to account to account for transaction fee and currency conversion loss. If it's paid by Paypal, the fee would be 3%.

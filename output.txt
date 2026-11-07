@@ -31,13 +31,13 @@ NOREF		-63.03 USD
 20261016_0	-24.51 USD
 20261020_0	0.00 USD
 20261020_1	0.00 USD
-20261021_0	-100.41 USD
+20261021_0	-68.02 USD
 ----------
-Profit:		249.12 USD (does not include material cost of inventory that hasn't been consumed)
-Cash Flow:	-31.05 USD (includes material cost of inventory that hasn't been consumed)
+Profit:		281.51 USD (does not include material cost of inventory that hasn't been consumed)
+Cash Flow:	-3.08 USD (includes material cost of inventory that hasn't been consumed)
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
-ilomusiali	19	Next unit @12.253 USD
-ilonena	7	Next unit @7.83 USD
+ilomusiali	20	Next unit @12.253 USD
+ilonena	6	Next unit @7.83 USD
 Reserved units (Counted towards consumed inventory):
-20261021_0	ilonena5,ilomusiali5	For redistribution in the US. Exact quantity to be confirmed and might be adjusted.
+20261021_0	ilonena5,ilomusiali3	For redistribution in the US. Exact quantity to be confirmed and might be adjusted.

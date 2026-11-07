@@ -162,7 +162,7 @@ EXPENSE: DATE 2026-05-12, TYPE shipping, REF 20260507_0, AMOUNT HKD35.9, FEE 0
 RELEASE: DATE 2026-05-14, TYPE sales, REF 20260416_0b, ITEMS ilonena1
 INCOME: DATE 2026-05-14, TYPE sales, REF 20260416_0b, AMOUNT USD36.03, FEE 3%
 
-OBTAIN: DATE 2026-05-15, TYPE assembled, PROJECT ilonena, QUANTITY 1, COSTEACH USD7.83, REMARKS 1 unit returned from Brazil due to unpaid tariff
+OBTAIN: DATE 2026-05-15, TYPE assembled, PROJECT ilonena, QUANTITY 1, COSTEACH USD0, REMARKS 1 unit returned from Brazil due to unpaid tariff
 
 EXPENSE: DATE 2026-05-25, TYPE material, PROJECT ilomusiali, BATCH 1b, SUPPLIER taobao, AMOUNT RMB188.27, FEE 3%, REMARKS 3.8+77.74+38+9.3+21.38+17.77+9.99+10.29. free shipping.
 EXPENSE: DATE 2026-05-25, TYPE R&D, PROJECT equipment, SUPPLIER taobao, AMOUNT RMB15.215, FEE 3%, REMARKS (1.81+28.62)*0.5, equipment is half funded by the pool, half funded by Sadale out of pocket
@@ -203,4 +203,9 @@ RELEASE: DATE 2026-10-20, TYPE gift, REF 20261020_0, ITEMS ilomusiali1, REMARKS 
 INCOME: DATE 2026-10-20, TYPE donation, REF 20261020_0, AMOUNT USD12.253, FEE 0, REMARKS Compensation from Sadale for give away
 RELEASE: DATE 2026-10-20, TYPE gift, REF 20261020_1, ITEMS ilomusiali1, REMARKS For ##anime christmas raffle
 INCOME: DATE 2026-10-20, TYPE donation, REF 20261020_1, AMOUNT USD12.253, FEE 0, REMARKS Compensation from Sadale for give away
-RESERVE: DATE 2026-10-21, REF 20261021_0, ITEMS ilonena5 ilomusiali5, REMARKS For redistribution in the US. Exact quantity to be confirmed and might be adjusted.
+RESERVE: DATE 2026-10-21, REF 20261021_0, ITEMS ilonena6 ilomusiali4, REMARKS For redistribution in the US. Exact quantity to be confirmed and might be adjusted.
+
+RELEASE: DATE 2026-10-30, TYPE sales, REF 20261021_0a, ITEMS ilonena1 ilomusiali1
+INCOME: DATE 2026-10-30, TYPE sales, REF 20261021_0a, AMOUNT USD83, FEE 3%, REMARKS 0.00108459 BTC. Transaction ID eec500ab4e86317405874e82f87c9724d008648a554feb4dae05e1b6b5b4670f
+
+EXPENSE: DATE 2026-11-07, TYPE shipping, REF 20261021_0, AMOUNT HKD400, FEE HKD11.8, REMARKS the fee is commute cost. There's no transaction fee.
