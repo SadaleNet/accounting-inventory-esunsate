@@ -127,7 +127,7 @@ RELEASE: DATE 2026-03-28, TYPE sales, REF 20260328_0, ITEMS ilonena1
 INCOME: DATE 2026-03-28, TYPE sales, REF 20260328_0, AMOUNT USD30.29, FEE 3%
 RELEASE: DATE 2026-03-29, TYPE sales, REF 20260302_0, ITEMS ilonena1, REMARKS reshipment of unintentionally returned packet
 
-EXPENSE: DATE 2026-03-31, TYPE shipping, REF 20260302_0, AMOUNT HKD72.3, FEE 0, REMARKS 144.6/2, reshipped because the original shipment got returned to sender
+EXPENSE: DATE 2026-03-31, TYPE shipping, REF 20260302_0, AMOUNT HKD72.3, FEE 0, REMARKS 144.6/2, reshipped because the original shipment got returned to me
 EXPENSE: DATE 2026-03-31, TYPE shipping, REF 20260328_0, AMOUNT HKD72.3, FEE 0, REMARKS 144.6/2
 
 EXPENSE: DATE 2026-04-03, TYPE material, PROJECT ilomusiali, BATCH 1a, SUPPLIER taobao, AMOUNT RMB321.85, FEE 3%, REMARKS 7.64+89+200+20+2.6+2.61. free shipping.
@@ -161,8 +161,6 @@ EXPENSE: DATE 2026-05-12, TYPE shipping, REF 20260507_0, AMOUNT HKD35.9, FEE 0
 
 RELEASE: DATE 2026-05-14, TYPE sales, REF 20260416_0b, ITEMS ilonena1
 INCOME: DATE 2026-05-14, TYPE sales, REF 20260416_0b, AMOUNT USD36.03, FEE 3%
-
-OBTAIN: DATE 2026-05-15, TYPE assembled, PROJECT ilonena, QUANTITY 1, COSTEACH USD0, REMARKS 1 unit returned from Brazil due to unpaid tariff
 
 EXPENSE: DATE 2026-05-25, TYPE material, PROJECT ilomusiali, BATCH 1b, SUPPLIER taobao, AMOUNT RMB188.27, FEE 3%, REMARKS 3.8+77.74+38+9.3+21.38+17.77+9.99+10.29. free shipping.
 EXPENSE: DATE 2026-05-25, TYPE R&D, PROJECT equipment, SUPPLIER taobao, AMOUNT RMB15.215, FEE 3%, REMARKS (1.81+28.62)*0.5, equipment is half funded by the pool, half funded by Sadale out of pocket

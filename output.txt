@@ -38,6 +38,6 @@ Cash Flow:	-3.08 USD (includes material cost of inventory that hasn't been consu
 ----------
 Inventory (Does not include the ones already sent to the US warehouse):
 ilomusiali	19	Next unit @12.253 USD
-ilonena	7	Next unit @7.83 USD
+ilonena	6	Next unit @7.83 USD
 Reserved units (Counted towards consumed inventory):
 20261021_0	ilonena4,ilomusiali4	For redistribution in the US
